@@ -70,12 +70,12 @@ class ViewPendaftaranMagang extends ViewRecord
                         ->send();
                 }),
                 
-            // Tombol Download Surat Pengantar
-            Actions\Action::make('downloadSurat')
-                ->label('Download Surat Pengantar')
-                ->icon('heroicon-o-arrow-down-tray')
-                ->color('info')
-                ->url(fn ($record) => $record->surat_pengantar ? Storage::url($record->surat_pengantar) : '#')
+            Actions\Action::make('previewSurat')
+                ->label('Lihat Dokumen')
+                ->icon('heroicon-o-eye')
+                ->color('primary')
+                ->url(fn ($record) => $record->surat_pengantar ? route('admin.pendaftaran.previewSuratPengantar', $record) : '#')
+                ->openUrlInNewTab()
                 ->visible(fn ($record) => $record->surat_pengantar),
                 
             // Tombol Print Detail

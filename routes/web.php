@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\PendaftaranMagangController;
 use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
@@ -65,6 +66,9 @@ Route::middleware(['auth'])->group(function () {
 // Rute untuk admin
 Route::middleware(['auth', 'admin'])->group(function () {
     // Tidak perlu definisikan apa-apa, Filament sudah mengatur route admin
+
+    // Route preview surat pengantar inline untuk admin
+    Route::get('/admin/pendaftaran/{pendaftaran}/surat-pengantar/preview', [\App\Http\Controllers\Admin\PendaftaranMagangController::class, 'previewSuratPengantar'])->name('admin.pendaftaran.previewSuratPengantar');
 });
 
 // Route untuk Settings di Filament
