@@ -96,11 +96,7 @@ SiAMang adalah sistem informasi berbasis web yang dirancang untuk mengelola pros
 
 ### Admin
 - **Email**: admin@example.com
-- **Password**: password
-
-### Mahasiswa
-- **Email**: mahasiswa@example.com
-- **Password**: password
+- **Password**: admin123
 
 ## 📁 Struktur Folder
 
@@ -192,7 +188,6 @@ Kami terbuka untuk kontribusi! Silakan:
 ## 📞 Kontak
 
 Untuk pertanyaan atau bantuan:
-- **Email**: support@siamang.com
 - **Issues**: [GitHub Issues](https://github.com/Jhunkcion/SiAMang/issues)
 
 ## 📄 Lisensi
@@ -201,4 +196,4 @@ Proyek ini dilisensikan di bawah [MIT License](LICENSE)
 
 ---
 
-**Dibuat dengan ❤️ oleh Tim SiAMang**
+**Dibuat dengan ❤️ oleh Jhunkcion**
