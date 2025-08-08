@@ -394,10 +394,10 @@
                     <label class="form-label">Asal Kampus/Sekolah</label>
                     <div class="select-container">
                         <!-- Select box yang terlihat -->
-                        <div class="select-box">
+                        <!--<div class="select-box">
                             <span class="selected-text">-- Pilih Kampus --</span>
                             <span class="arrow"><i class="fas fa-chevron-down"></i></span>
-                        </div>
+                        </div><-->
 
                         <!-- Options container dengan search di dalamnya -->
                         <div class="options-container">
